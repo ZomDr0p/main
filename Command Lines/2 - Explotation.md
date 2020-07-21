@@ -23,28 +23,28 @@ Launch the console:
  * `msfconsole`
 
 With help we can see all the commands that we can execute:
-help
+ * `help`
 
 Check database status:
-db_status
+ * `db_status`
 
 Import a scan, it can be from Nmap:
-db_import /home/nmap_scan.xml
+ * `db_import /home/nmap_scan.xml`
 
 With host we can check all the imported hosts, showing OS, ip, MAC, hostname:
-hosts
+ * `hosts`
 
 With service you can see the services that had the hosts imported:
-services
-services -p 21
-services -S ms-sql
+ * `services`
+ * `services -p 21`
+ * `services -S ms-sql`
 
 To look after a exploit or auxiliary you can use search for services or CVE or popupar names given:
-search ftp
-search MS17-010
-search vsftpd 2.3
+ * `search ftp`
+ * `search MS17-010`
+ * `search vsftpd 2.3`
 
 With searchsploit is for look after external exploits:
-searchsploit vsftpd
+ * `searchsploit vsftpd`
 
 To set a 
