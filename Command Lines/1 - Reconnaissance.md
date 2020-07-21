@@ -109,14 +109,14 @@ To check if the web site has firewalls or WAF
  * `wafw00f http://example.com`
  
  
-##NIKTO
+## NIKTO
 
 It makes analysis web of possible vulnerabilities that the web page possibily has based on the versions of the services, frameworks, pluggins..
  * https://github.com/sullo/nikto
  * `nikto -h http://192.168.152.130:80`
 
 
-##OWAPS ZAP
+## OWAPS ZAP
 
 Web scanner of the OWAPS org. Is the one that gives the most information about the machine. 
  * https://www.zaproxy.org/download/
@@ -127,7 +127,7 @@ Is a GUI, it only requires to execute 2 scripts
  * `zap.sh`
 
 
-##JOOMSCAN
+## JOOMSCAN
 
 Web scan for pages based in Joombla:
  * https://github.com/rezasp/joomscan
@@ -136,7 +136,7 @@ Web scan for pages based in Joombla:
  * `perl joomscan.pl -u http://example.com/`
 
 
-##CMSmap
+## CMSmap
 
 Scanning tool to the main CMS like Wordpress Joomla Druppal y Moodle:
  * https://github.com/Dionach/CMSmap
@@ -144,19 +144,19 @@ Scanning tool to the main CMS like Wordpress Joomla Druppal y Moodle:
  * `pip3 install .`
 
 
-##WPS SCAN
+## WPS SCAN
 
 Web scan specific for the CMS Wordpress
  * https://github.com/wpscanteam/wpscan
  * `wps --url http://192.168.152.130/ -e u ap`
 
 
-##DIG
+## DIG
 Basic information about the DNS registry, like PRT (resolves a IP to a hostname) or the A registry(point to a IP):
  * `dig -x 8.8.8.8`
 
 
-##DNSENUM
+## DNSENUM
 Perl script to enumerate DNS information of a domian and discober IPs:
  * https://github.com/fwaeytens/dnsenum
  * `dnsenum example.com`
