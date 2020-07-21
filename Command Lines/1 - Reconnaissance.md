@@ -93,11 +93,70 @@ If I want to use a different dicionary and output the resoult:
   * `dirb http://example.com /usr/share/dirb/wordlists/vulns/apache.txt -o output.txt`
 	
 Looking for a specific extension:
-	* `dirb http://example.com -X .php`
+  * `dirb http://example.com -X .php`
 
 If I do not want to show the pages that gives a specific response:
-	* `dirb http://example.com  -N 302`
+  * `dirb http://example.com  -N 302`
 	
 To put delay beetween petitions:
   * `dirb http://example.com  -z 100`
   
+  
+## WAFW00F
+
+To check if the web site has firewalls or WAF
+ * https://github.com/EnableSecurity/wafw00f
+ * `wafw00f http://example.com`
+ 
+ 
+##NIKTO
+
+It makes analysis web of possible vulnerabilities that the web page possibily has based on the versions of the services, frameworks, pluggins..
+ * https://github.com/sullo/nikto
+ * `nikto -h http://192.168.152.130:80`
+
+
+##OWAPS ZAP
+
+Web scanner of the OWAPS org. Is the one that gives the most information about the machine. 
+ * https://www.zaproxy.org/download/
+ 
+Is a GUI, it only requires to execute 2 scripts
+ * `chmod 744 ZAP_2_9_0_unix.sh`
+ * `ZAP_2_9_0_unix.sh`
+ * `zap.sh`
+
+
+##JOOMSCAN
+
+Web scan for pages based in Joombla:
+ * https://github.com/rezasp/joomscan
+ * `git clone https://github.com/rezasp/joomscan`
+ * `cd joomscan`
+ * `perl joomscan.pl -u http://example.com/`
+
+
+##CMSmap
+
+Scanning tool to the main CMS like Wordpress Joomla Druppal y Moodle:
+ * https://github.com/Dionach/CMSmap
+ * `cd CMSmap`
+ * `pip3 install .`
+
+
+##WPS SCAN
+
+Web scan specific for the CMS Wordpress
+ * https://github.com/wpscanteam/wpscan
+ * `wps --url http://192.168.152.130/ -e u ap`
+
+
+##DIG
+Basic information about the DNS registry, like PRT (resolves a IP to a hostname) or the A registry(point to a IP):
+ * `dig -x 8.8.8.8`
+
+
+##DNSENUM
+Perl script to enumerate DNS information of a domian and discober IPs:
+ * https://github.com/fwaeytens/dnsenum
+ * `dnsenum example.com`
